@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Feedback from "@/components/Feedback";
-import Chat from "@/components/Chat";
 import videoLecturesGreen from "../assets/videolecturesgreen.png";
 import quizGenerator from "../assets/quizgenerator.png";
 import textbooks from "../assets/textbooks.png";
