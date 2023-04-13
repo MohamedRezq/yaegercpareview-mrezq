@@ -9,16 +9,23 @@ import cramcourses from "../assets/cramcourses.png";
 import x2 from "../assets/x2.png";
 import Link from "next/link";
 import { AiFillStar, AiOutlineCheck } from "react-icons/ai";
+import aicpa from "../assets/aicpa.png";
+import payfor from "../assets/payfor.png";
+import studentsicon from "../assets/students-icon.png";
+import whateveryouneed from "../assets/whateveryouneed.png";
+import runningman from "../assets/runningman.png";
+import salessection from "../assets/salessection.png";
+import { BsFillBoxSeamFill } from "react-icons/bs";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="my-10 mx-10">
+    <div className="my-10 flex flex-col justify-center">
       <div className="text-greenish text-2xl md:text-4xl lg:text-5xl font-bold text-center my-14">
         YAEGER CPA REVIEW FULL COURSE
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-10">
+      <div className="grid lg:mx-16 grid-cols-1 lg:grid-cols-2 gap-x-10">
         <div className="bg-grayish rounded-2xl flex flex-col items-center justify-center p-10 gap-y-2">
           <Image src={videoLecturesGreen} alt="Video Lectures" width={100} />
           <div className="text-greenish text-3xl text-center my-5">
@@ -252,7 +259,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-grayish my-10 text-greenish rounded-xl p-10 flex flex-col gap-y-2">
+      <div className="bg-grayish lg:mx-16 my-10 text-greenish rounded-xl p-10 flex flex-col gap-y-2">
         <div className="mb-3 text-md">Featured Review</div>
         <div className="text-lg font-bold">John T.</div>
         <div className="flex gap-x-2 text-green-500">
@@ -270,6 +277,133 @@ export default function Home() {
           recommendations and didn't pass I would be shocked. The staff is also
           great to work with. Good luck!"
         </cite>
+      </div>
+      <div className="text-greenish text-2xl md:text-3xl lg:text-4xl font-bold text-center mt-14 mb-6">
+        Why is Yaeger CPA the Best CPA Course?
+      </div>
+      <div className="text-darkish lg:mx-16 text-md md:text-lg lg:text-xl text-center">
+        Our 'PHILosophy' for CPA Exam success is built from the experience of
+        our lead instructor and founder, Phil Yaeger, PhD, MBA, CPA, CGMA.
+      </div>
+      <div className="grid grid-cols-1 lg:mx-16 my-10 lg:grid-cols-2 gap-10">
+        <div className="bg-grayish rounded-2xl flex flex-col items-center justify-start p-10 gap-y-2">
+          <Image src={studentsicon} alt="students-icon" height={100} />
+          <div className="text-darkish text-2xl text-center mt-10 mb-2">
+            Students Over Revenue
+          </div>
+          <div className="text-darkish text-lg text-center">
+            Our priority is to make sure you are confident about taking the CPA
+            Exam, going above and beyond to ensure you understand and feel
+            prepared.
+          </div>
+        </div>
+        <div className="bg-grayish rounded-2xl flex flex-col items-center justify-start p-10 gap-y-2">
+          <Image src={whateveryouneed} alt="whateveryouneed" height={100} />
+          <div className="text-darkish text-2xl text-center mt-10 mb-2">
+            We Are Here For You Whenever, For Whatever You Need
+          </div>
+          <div className="text-darkish text-lg text-center">
+            Whether you need a pep talk, want to discuss concepts that doesn't
+            make sense, or complain about how no one seems to understand what
+            you're going through, we are always here.
+          </div>
+        </div>
+        <div className="bg-grayish rounded-2xl flex flex-col items-center justify-start p-10 gap-y-2">
+          <Image src={payfor} alt="payfor" height={100} />
+          <div className="text-darkish text-2xl text-center mt-10 mb-2">
+            Pay For Only What You Need
+          </div>
+          <div className="text-darkish text-lg text-center">
+            No one studies for the CPA Exam forever, so why pay thousands of
+            dollars more for access that you don't need? Our program is designed
+            to keep you on track and focused on passing the exam within your
+            testing window. We have affordable pricing with the option to set up
+            a payment plan through Affirm®. Pay now or as you go with our easy
+            subscription plan.
+          </div>
+        </div>
+        <div className="bg-grayish rounded-2xl flex flex-col items-center justify-start p-10 gap-y-2">
+          <Image src={aicpa} alt="aicpa" height={100} />
+          <div className="text-darkish text-2xl text-center mt-10 mb-2">
+            AICPA Blueprints - The Path To Success
+          </div>
+          <div className="text-darkish text-lg text-center">
+            Yaeger CPA Review fully integrates the AICPA Blueprints into all
+            study materials. Rather than waste time on rote memorization, our
+            instructors teach you to understand the concepts and apply your
+            critical thinking skills.
+          </div>
+        </div>
+      </div>
+      <div className="bg-grayish w-full gap-y-10 grid grid-cols-1 py-10 px-20 lg:grid-cols-3">
+        <div className="relative mx-auto p-10 w-60 h-60 bg-white rounded-full">
+          <Image
+            className="absolute -top-10"
+            src={runningman}
+            alt="runningman"
+            height="350"
+          />
+        </div>
+        <div className="text-greenish text-center col-span-2 mx-auto">
+          <div className="text-2xl lg:text-3xl mb-3 font-semibold">
+            Most Popular CPA Exam Prep Material
+          </div>
+          <div className="text-darkish mb-5 text-lg">
+            Our CPA Exam prep and study materials are built with the AICPA
+            Blueprints and refined with over 43+ years of experience to create
+            the most effective learning methods.
+          </div>
+          <div className="font-semibold">
+            WE KNOW WE CAN GET YOU THROUGH THE EXAM !
+          </div>
+          <button className="mt-3 border-greenish hover:bg-greenish hover:text-white border-2 rounded-3xl bg-white py-2 px-10">
+            Get Free Trial
+          </button>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-10 gap-x-3 mx-5 my-20 lg:mx-16">
+        <div className="flex flex-col gap-y-5">
+          <div className="text-greenish text-4xl mb-8 mt-2">
+            All- Access Bundles
+          </div>
+          <div className="text-darkish text-xl flex flex-col gap-y-3">
+            <div className="flex items-start gap-x-5">
+              <BsFillBoxSeamFill />
+              Comprehensive bundle of resources to ensure Exam success
+            </div>
+            <div className="flex items-start gap-x-5">
+              <BsFillBoxSeamFill />
+              Books, video and audio lectures, final review, CPA Exam simulator,
+              and more
+            </div>
+            <div className="flex items-start gap-x-5">
+              <BsFillBoxSeamFill />
+              Supportive online community and direct access to CPA instructors,
+              including Phil Yaeger
+            </div>
+            <div className="flex items-start gap-x-5">
+              <BsFillBoxSeamFill />
+              Flexible payment options including a pay-as-you-go subscription
+              and interest-free financing plan
+            </div>
+          </div>
+        </div>
+        <div className="px-5">
+          <Image src={salessection} alt="salessection" />
+        </div>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2">
+        <div className="font-bold text-2xl lg:text-4xl mx-auto">
+          Pass The CPA Exam Fast!
+        </div>
+        <div className="flex flex-col gap-y-2 items-start justify-start">
+          <div className="text-2xl lg:text-3xl">
+            Start your Free 3-Day Trial
+          </div>
+          <button className="mt-3 border-greenish hover:bg-greenish hover:text-white border-2 rounded-3xl bg-white py-2 px-10">
+            Learn More
+          </button>
+        </div>
       </div>
       <Feedback />
     </div>
