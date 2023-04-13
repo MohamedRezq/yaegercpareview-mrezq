@@ -9,7 +9,7 @@ import audiolectures from "../assets/audiolectures.png";
 import cramcourses from "../assets/cramcourses.png";
 import x2 from "../assets/x2.png";
 import Link from "next/link";
-import {AiFillStar, AiOutlineCheck} from 'react-icons/ai';
+import { AiFillStar, AiOutlineCheck } from "react-icons/ai";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -178,11 +178,14 @@ export default function Home() {
             Add Selected Item(s) to Cart
           </button>
           <div className="text-lg font-semibold">
-            <span className='text-darkish'>Starting at $91/mo with affirm.</span>{' '}<Link href='/'>Learn more</Link>
+            <span className="text-darkish">
+              Starting at $91/mo with affirm.
+            </span>{" "}
+            <Link href="/">Learn more</Link>
           </div>
         </div>
         <div className="bg-greenish text-white lg:-ml-10 lg:w-3/4 lg:h-11/12 shadow-md shadow-darkish my-auto flex flex-col items-center justify-center p-5 gap-y-2">
-        <div className="text-2xl text-center">CPA Review PLUS+</div>
+          <div className="text-2xl text-center">CPA Review PLUS+</div>
           <div className="grid grid-cols-2 gap-x-10 text-3xl my-3 text-center">
             <div className="flex flex-col">
               <div className="relative w-auto">
@@ -214,8 +217,12 @@ export default function Home() {
           <div>Everything in Basic</div>
           <div className="text-2xl">+PLUS</div>
           <div className="self-start ml-10 text-lg">
-          <div className="flex items-center"><AiOutlineCheck className="mr-5" /> CRAM - Final, Wrap-up, Review</div>
-          <div className="flex items-center"><AiOutlineCheck className="mr-5" /> Audio Lecture Series</div>
+            <div className="flex items-center">
+              <AiOutlineCheck className="mr-5" /> CRAM - Final, Wrap-up, Review
+            </div>
+            <div className="flex items-center">
+              <AiOutlineCheck className="mr-5" /> Audio Lecture Series
+            </div>
           </div>
           <div className="mt-5 text-xl">Build Your CPA Review Basic PLUS+</div>
           <div className="grid grid-cols-4 gap-x-5">
@@ -239,7 +246,10 @@ export default function Home() {
             Add Selected Item(s) to Cart
           </button>
           <div className="text-lg">
-            Starting at $91/mo with<span className='text-darkish font-semibold'>{' '}affirm</span>{'. '}<Link href='/'>Learn more</Link>
+            Starting at $91/mo with
+            <span className="text-darkish font-semibold"> affirm</span>
+            {". "}
+            <Link href="/">Learn more</Link>
           </div>
         </div>
       </div>
@@ -247,9 +257,20 @@ export default function Home() {
         <div className="mb-3 text-md">Featured Review</div>
         <div className="text-lg font-bold">John T.</div>
         <div className="flex gap-x-2 text-green-500">
-          <AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar />
+          <AiFillStar />
+          <AiFillStar />
+          <AiFillStar />
+          <AiFillStar />
+          <AiFillStar />
         </div>
-        <cite>"I'm a very visual learner, so the Yaeger CPA review course appealed to me because of the amount of lecture video that was available. I missed one part (FAR 74) with Yaeger on the first attempt, but I only completed 60% of the course. If you completed 100% of the course recommendations and didn't pass I would be shocked. The staff is also great to work with. Good luck!"</cite>
+        <cite>
+          "I'm a very visual learner, so the Yaeger CPA review course appealed
+          to me because of the amount of lecture video that was available. I
+          missed one part (FAR 74) with Yaeger on the first attempt, but I only
+          completed 60% of the course. If you completed 100% of the course
+          recommendations and didn't pass I would be shocked. The staff is also
+          great to work with. Good luck!"
+        </cite>
       </div>
       <Feedback />
     </div>
