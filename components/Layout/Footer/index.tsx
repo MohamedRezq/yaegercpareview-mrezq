@@ -94,7 +94,7 @@ const Footer = () => {
           <div className="text-2xl mb-3">Navigation</div>
           <ul className="flex flex-col gap-y-3">
             {footerNavLinks.map((link, i) => (
-              <Link href={link.url}>
+              <Link key={link.url} href={link.url}>
                 <li className="group transition duration-300">{link.text}</li>
               </Link>
             ))}

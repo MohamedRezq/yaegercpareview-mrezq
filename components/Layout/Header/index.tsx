@@ -53,7 +53,7 @@ const Header = () => {
     <header className="flex flex-col gap-y-5 my-5 mx-16">
       <ul className="flex text-greenish gap-x-5 justify-end mr-10">
         {miniNavLinks.map((link, i) => (
-          <Link href={link.url}>
+          <Link key={link.url} href={link.url}>
             <li className="group transition duration-300">
               {link.text}
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-greenish"></span>
@@ -65,7 +65,7 @@ const Header = () => {
         <Image src={logo} alt='yaegercpareview' width={200} />
         <ul className="flex text-darkish gap-x-6 justify-end items-center mr-10">
         {headerLinks.map((link, i) => (
-          <Link href={link.url}>
+          <Link key={link.url} href={link.url}>
             <li className="group transition duration-300">
               {link.text}
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-darkish"></span>
