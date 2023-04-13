@@ -10,6 +10,7 @@ import {
 } from "react-icons/bs";
 import { GrLinkedinOption } from "react-icons/gr";
 import { AiOutlineGoogle, AiFillInstagram } from "react-icons/ai";
+import Feedback from "@/components/Feedback";
 
 const Footer = () => {
   const footerNavLinks = [
@@ -41,43 +42,43 @@ const Footer = () => {
   const footerSocialIcons = [
     {
       icon: <FiTwitter />,
-      url: "/",
+      url: "/twitter",
     },
     {
       icon: <FaFacebookF />,
-      url: "/",
+      url: "/facebook",
     },
     {
       icon: <BsVimeo />,
-      url: "/",
+      url: "/vimeo",
     },
     {
       icon: <FaPinterestP />,
-      url: "/",
+      url: "/pinterest",
     },
     {
       icon: <GrLinkedinOption />,
-      url: "/",
+      url: "/linkedin",
     },
     {
       icon: <BsYoutube />,
-      url: "/",
+      url: "/youtube",
     },
     {
       icon: <AiOutlineGoogle />,
-      url: "/",
+      url: "/google",
     },
     {
       icon: <AiFillInstagram />,
-      url: "/",
+      url: "/instagram",
     },
     {
       icon: <BsSpotify />,
-      url: "/",
+      url: "/spotify",
     },
     {
       icon: <BsMusicNoteBeamed />,
-      url: "/",
+      url: "/musicnote",
     },
   ];
   return (
@@ -127,6 +128,7 @@ const Footer = () => {
           ))}
         </ul>
       </div>
+      <Feedback />
     </footer>
   );
 };

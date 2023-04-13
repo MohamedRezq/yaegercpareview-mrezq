@@ -3,6 +3,8 @@ import type { NextPage } from "next";
 import type { AppProps } from "next/app";
 
 import "@/styles/globals.css";
+import 'react-chat-widget/lib/styles.css';
+
 import Layout from "@/components/Layout";
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {

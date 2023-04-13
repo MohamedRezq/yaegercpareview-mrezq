@@ -16,6 +16,7 @@ import whateveryouneed from "../assets/whateveryouneed.png";
 import runningman from "../assets/runningman.png";
 import salessection from "../assets/salessection.png";
 import { BsFillBoxSeamFill } from "react-icons/bs";
+import ChatWidget from '../components/ChatWidget';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -270,20 +271,21 @@ export default function Home() {
           <AiFillStar />
         </div>
         <cite>
-        &quot;I&apos;m a very visual learner, so the Yaeger CPA review course appealed
-          to me because of the amount of lecture video that was available. I
-          missed one part (FAR 74) with Yaeger on the first attempt, but I only
-          completed 60% of the course. If you completed 100% of the course
-          recommendations and didn&apos;t pass I would be shocked. The staff is also
-          great to work with. Good luck!&quot;
+          &quot;I&apos;m a very visual learner, so the Yaeger CPA review course
+          appealed to me because of the amount of lecture video that was
+          available. I missed one part (FAR 74) with Yaeger on the first
+          attempt, but I only completed 60% of the course. If you completed 100%
+          of the course recommendations and didn&apos;t pass I would be shocked.
+          The staff is also great to work with. Good luck!&quot;
         </cite>
       </div>
       <div className="text-greenish text-2xl md:text-3xl lg:text-4xl font-bold text-center mt-14 mb-6">
         Why is Yaeger CPA the Best CPA Course?
       </div>
       <div className="text-darkish lg:mx-16 text-md md:text-lg lg:text-xl text-center">
-        Our &apos;PHILosophy&apos; for CPA Exam success is built from the experience of
-        our lead instructor and founder, Phil Yaeger, PhD, MBA, CPA, CGMA.
+        Our &apos;PHILosophy&apos; for CPA Exam success is built from the
+        experience of our lead instructor and founder, Phil Yaeger, PhD, MBA,
+        CPA, CGMA.
       </div>
       <div className="grid grid-cols-1 lg:mx-16 my-10 lg:grid-cols-2 gap-10">
         <div className="bg-grayish rounded-2xl flex flex-col items-center justify-start p-10 gap-y-2">
@@ -303,9 +305,9 @@ export default function Home() {
             We Are Here For You Whenever, For Whatever You Need
           </div>
           <div className="text-darkish text-lg text-center">
-            Whether you need a pep talk, want to discuss concepts that doesn&apos;t
-            make sense, or complain about how no one seems to understand what
-            you&apos;re going through, we are always here.
+            Whether you need a pep talk, want to discuss concepts that
+            doesn&apos;t make sense, or complain about how no one seems to
+            understand what you&apos;re going through, we are always here.
           </div>
         </div>
         <div className="bg-grayish rounded-2xl flex flex-col items-center justify-start p-10 gap-y-2">
@@ -315,11 +317,11 @@ export default function Home() {
           </div>
           <div className="text-darkish text-lg text-center">
             No one studies for the CPA Exam forever, so why pay thousands of
-            dollars more for access that you don&apos;t need? Our program is designed
-            to keep you on track and focused on passing the exam within your
-            testing window. We have affordable pricing with the option to set up
-            a payment plan through Affirm®. Pay now or as you go with our easy
-            subscription plan.
+            dollars more for access that you don&apos;t need? Our program is
+            designed to keep you on track and focused on passing the exam within
+            your testing window. We have affordable pricing with the option to
+            set up a payment plan through Affirm®. Pay now or as you go with our
+            easy subscription plan.
           </div>
         </div>
         <div className="bg-grayish rounded-2xl flex flex-col items-center justify-start p-10 gap-y-2">
@@ -396,7 +398,7 @@ export default function Home() {
         <div className="font-bold text-2xl lg:text-4xl mx-auto">
           Pass The CPA Exam Fast!
         </div>
-        <div className="flex flex-col gap-y-2 items-start justify-start">
+        <div className="flex flex-col gap-y-2 items-center lg:items-start lg:justify-start">
           <div className="text-2xl lg:text-3xl">
             Start your Free 3-Day Trial
           </div>
