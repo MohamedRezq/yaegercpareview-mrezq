@@ -134,6 +134,7 @@ const Header = () => {
                 className={`group text-lg transition duration-300 ${
                   link.dropdown && "dropdown"
                 }`}
+                key={`header-nav-${link.url}`}
               >
                 {link.url ? (
                   <Link key={link.url} href={link.url}>
@@ -181,6 +182,7 @@ const Header = () => {
                 className={`group text-lg transition duration-300 mb-3 ${
                   link.dropdown && "dropdown"
                 }`}
+                key={`mobile-nav-${link.url}`}
               >
                 {link.url ? (
                   <Link key={link.url} href={link.url}>

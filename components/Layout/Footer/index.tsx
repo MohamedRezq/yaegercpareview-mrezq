@@ -121,7 +121,7 @@ const Footer = () => {
         <div>Copyright © 2023 Yaeger CPA Review</div>
         <ul className="flex gap-x-3 sm:gap-x-5 text-white text-lg">
           {footerSocialIcons.map((icon, i) => (
-            <Link href={icon.url}>
+            <Link href={icon.url} key={`footer-icon-${icon.url}`}>
               <li>{icon.icon}</li>
             </Link>
           ))}
